@@ -1,0 +1,144 @@
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');   
+
+/* 
+==================================
+=        FAQ Page Style          =
+==================================
+*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+p{
+    color: var(--black);
+    line-height: 30px;
+    font-size: 18px;
+}
+
+:root{
+    --white: #ffffff;
+    --bg-dark: #40715F;
+    --bg-light: #70AE98;
+    --black: #000000; 
+}
+
+#hero-banner{
+    width: 100%;
+    min-height: 100vh;
+    background: #1D2930;
+    padding: 20px 0;
+}
+
+#hero-banner h2::before{
+    content: '~ Kushal Sharma';
+    position: fixed;
+    color: var(--white);
+    font-size: 22px;
+    bottom: 10px;
+    right: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#hero-banner h2{
+    font-size: 3em;
+    text-align: center;
+}
+
+#hero-banner .FAQ{
+    width: 85%;
+    background: var(--white);
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+}
+
+#hero-banner .FAQ .inner-div{
+    width: 50%;
+    padding: 30px;
+    background: var(--white);
+}
+
+#hero-banner .FAQ .inner-div.right{
+    background-color: #ECECEC;
+}
+
+#hero-banner .FAQ .inner-div h4{
+    color: var(--black);
+    font-size: 34px;
+}
+
+#hero-banner .inner-div .slide{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+#hero-banner .inner-div .slide .heading{
+    padding: 20px 30px;
+    background: var(--bg-dark);
+    font-size: 26px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#hero-banner .inner-div .slide .txt{
+    padding: 0;
+    color: var(--black);
+    height: 0;
+}
+
+#hero-banner .inner-div .slide.active .txt{
+    display: block;
+    height: auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    #hero-banner .FAQ .inner-div{
+        width: 100%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    #hero-banner .FAQ .inner-div.right{
+        margin-top: 40px;
+    }
+    #hero-banner .FAQ{
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 520px){
+    p{
+        line-height: 25px;
+        font-size: 16px;
+    }
+    #hero-banner h2{
+        font-size: 2.5em;
+    }
+    #hero-banner .FAQ .inner-div h4{
+        font-size: 26px;
+    }
+    #hero-banner .FAQ .inner-div{
+        padding: 30px 20px;
+    }
+}
